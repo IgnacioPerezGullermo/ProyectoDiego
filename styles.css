@@ -1,0 +1,28 @@
+@font-face{
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format(svg),
+    url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+#inicio{
+margin-left: 20px;
+border: 2px;
+border-color: khaki;
+border-radius: 1px;
+}
+
+
+#busqueda{
+    display: flex;
+    align-items: right;
+    margin-left: 120px;
+}
+
+.btn{
+    font-family:"icons";
+    margin-left: 10px;
+}
