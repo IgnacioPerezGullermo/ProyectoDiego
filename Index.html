@@ -12,28 +12,36 @@
 <body>
   <div class="container mb-4 d-flex justify-center">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
-      <ul class="navbar-nav d-flex flex-row">
-        <img src="/ProyectoDiego/img/psicologia-forma-diseño-logos-3.jpg" class="col-1" alt="Logo" style="max-height: 50px; margin-left: 190px;">
-        <li  class="nav-item pl-4 pr-4 col-2 ">
-            <a id="inicio" class="nav-link text-center rounded-sm" href="#">Inicio</a>
-        </li>
-        <li id="exhib" class="nav-item mg-3 pl-4 pr-4 col-2">
-          <a class="nav-link text-center" href="#">En Exhibicion</a>
-        </li>
-        <li id="contacto"class="nav-item mg-3 pl-4 pr-4 col-2">
-          <a class="nav-link text-center" href="#">Contacto</a>
-        </li>
-      </ul>
-      <form id="busqueda" class="form-inline d-flex mr-5" action="/action_page.php">
-        <input class="form-control mr-sm-2" type="text" placeholder="Busqueda">
-        <button class="btn btn-success" type="submit">L</button>
-      </form>
+      <div class="container d-flex flex-row">
+        <ul class="navbar-nav d-flex flex-row">
+          <img src="/ProyectoDiego/img/psicologia-forma-diseño-logos-3.jpg" class="col-1" alt="Logo" style="max-height: 50px;">
+          <li  class="nav-item pl-4 pr-4 col-2 ">
+              <a id="inicio" class="nav-link text-center rounded-sm" href="#">Inicio</a>
+          </li>
+          <li id="exhib" class="nav-item mg-3 pl-4 pr-4 col-2">
+            <a class="nav-link text-center" href="#">En Exhibicion</a>
+          </li>
+          <li id="contacto"class="nav-item mg-3 pl-4 pr-4 col-2">
+            <a class="nav-link text-center" href="#">Contacto</a>
+          </li>
+        </ul>
+        <form id="busqueda" class="form-inline d-flex flex-row-reverse" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Busqueda">
+          <button class="btn btn-success" type="submit">L</button>
+        </form>
+
+      </div>      
     </nav>
   </div>
 
   <br>
-  <div class="container-lg mt-4 ">
-    <div class="card-deck d-flex flex-row ">
+  <div id="banner">
+    <h1>ACEPTAMOS TARJETAS DE DEBITO/CREDITO Y TRANSFERENCIAS</h1>
+</div>
+
+  
+  <div class="container-lg mt-1 border">
+    <div class="card-deck d-flex flex-wrap ">
       <div class="card bg-light col-xs-3  m-1">
         <div class="card-body text-center">
           <img class="card-img-top" src="/ProyectoDiego/img/Tarjeta 1.jpg" alt="Card image" style="width: 250px;">
@@ -62,9 +70,45 @@
           <p class="card-text">Tallado a mano</p>
         </div>
       </div>
+      <div class="card bg-light col-xs-3 m-1">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="/ProyectoDiego/img/Tarjeta 1.jpg" alt="Card image" style="width: 250px;">
+          <h4 class="card-title">Buho de Roble</h4>
+          <p class="card-text">Tallado a mano</p>
+        </div>
+      </div>
+      <div class="card bg-light col-xs-3 m-1">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="/ProyectoDiego/img/Tarjeta 1.jpg" alt="Card image" style="width: 250px;">
+          <h4 class="card-title">Buho de Roble</h4>
+          <p class="card-text">Tallado a mano</p>
+        </div>
+      </div>
+      <div class="card bg-light col-xs-3 m-1">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="/ProyectoDiego/img/Tarjeta 1.jpg" alt="Card image" style="width: 250px;">
+          <h4 class="card-title">Buho de Roble</h4>
+          <p class="card-text">Tallado a mano</p>
+        </div>
+      </div>
+      <div class="card bg-light col-xs-3 m-1">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="/ProyectoDiego/img/Tarjeta 1.jpg" alt="Card image" style="width: 250px;">
+          <h4 class="card-title">Buho de Roble</h4>
+          <p class="card-text">Tallado a mano</p>
+        </div>
+      </div>
     </div>
+    <ul class="pagination pagination-m">
+      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+    </ul>
 
   </div>
+
   
 
 

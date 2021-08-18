@@ -8,8 +8,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: "BebasNeue";
+    src: url(fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 #inicio{
-margin-left: 20px;
 border: 2px;
 border-color: khaki;
 border-radius: 1px;
@@ -24,5 +30,64 @@ border-radius: 1px;
 
 .btn{
     font-family:"icons";
-    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#banner{
+    width: 70%;
+    height: 120px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px grey;
+    background: url(../ProyectoDiego/img/Fondo.jpg);
+    background-position: -200px -200px;
+    margin: 20px auto;
+    animation: backBanner 10s linear;
+    overflow: hidden;
+}
+
+@keyframes backBanner{
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -200px -200px;
+    }
+}
+
+#banner h1{
+    display: block;
+    width: 1020px;
+    font-family: "BebasNeue";
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 27px auto;
+    font-weight: normal;
+ 
+    text-shadow: 2px 2px 1px black;
+    animation: showText 10s linear;
+}
+
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(600%) scale(5,5);
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
 }
